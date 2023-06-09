@@ -22,8 +22,7 @@ services:
 
   gitlab:
     labels:
-      shipyard:
-        route: "/"
+      shipyard.route: "/"
     restart: always
     image: sameersbn/gitlab:15.10.2
     depends_on:

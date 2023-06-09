@@ -21,6 +21,9 @@ services:
     - DB_EXTENSION=pg_trgm,btree_gist
 
   gitlab:
+    labels:
+      shipyard:
+        route: "/"
     restart: always
     image: sameersbn/gitlab:15.10.2
     depends_on:
